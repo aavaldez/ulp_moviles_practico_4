@@ -21,7 +21,8 @@ public class SalirDialogo {
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
-                });
+                })
+                .show();
 
     }
 }

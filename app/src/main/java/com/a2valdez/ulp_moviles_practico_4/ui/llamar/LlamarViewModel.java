@@ -23,7 +23,7 @@ public class LlamarViewModel extends AndroidViewModel {
         context = application.getApplicationContext();
     }
 
-    public LiveData<String> getText() {
+    public LiveData<String> getMText() {
         return mText;
     }
 
@@ -33,14 +33,13 @@ public class LlamarViewModel extends AndroidViewModel {
             mText.setValue("ERROR EL NUMERO INGRESADO NO ES VÁLIDO");
         } else{
             Intent intent = new Intent(Intent.ACTION_CALL);
-            intent.setData(Uri.parse("tel"+ numero));
+            intent.setData(Uri.parse("tel:"+ numero));
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             try{
                 context.startActivity(intent);
             } catch(Exception e){
                 mText.setValue("ERROR: NO TIENE PERMISOS");
             }
-
         }
     }
 }

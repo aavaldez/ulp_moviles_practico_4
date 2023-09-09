@@ -17,11 +17,9 @@ public class SalirFragment extends Fragment {
     private FragmentSalirBinding binding;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-        SalirDialogo.mostrarDialogo(this.getActivity());
-
         binding = FragmentSalirBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        SalirDialogo.mostrarDialogo(this.getActivity());
         return root;
     }
 

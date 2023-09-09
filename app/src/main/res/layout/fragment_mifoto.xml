@@ -19,12 +19,12 @@
 
     <ImageView
         android:id="@+id/ivFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="165dp"
+        android:layout_height="168dp"
         android:layout_marginTop="60dp"
+        android:contentDescription="@string/mi_foto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo2"
-        tools:src="@tools:sample/avatars"
-        android:contentDescription="@string/mi_foto" />
+        tools:src="@drawable/foto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
